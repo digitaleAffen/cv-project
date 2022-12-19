@@ -1,6 +1,5 @@
 .container {
   background: rgba(255, 255, 255, 0.1);
-  font-family: ;
   max-width: 600px;
   margin: 20px auto;
   padding: 20px;
@@ -10,6 +9,7 @@
 .theme-button {
   background: rgb(255, 234, 221);
   color: black;
+  border: 1px solid;
 }
 
 .theme-button:hover {
@@ -17,8 +17,41 @@
   color: white;
 }
 
+.gallery img {
+  transition: all 150ms ease-in-out;
+}
+
+.gallery img:hover {
+  filter: contrast(50%);
+  transform: scale(1.2);
+}
+
+.gallery {
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 15px;
+  margin: 20px 0;
+}
+
+.light-theme {
+  background: linear-gradient(
+    44.8deg,
+    rgba(255, 136, 102, 0.67) -53.1%,
+    rgba(255, 221, 136, 0.28) 49%
+  );
+}
+
+.light-theme .container {
+  background: rgb(251, 205, 176);
+}
+
 body {
-  background: black;
+  background: linear-gradient(
+    109.6deg,
+    rgba(0, 0, 0, 0.93) 11.2%,
+    rgb(63, 61, 61) 78.9%
+  );
 }
 
 h1 {
@@ -31,12 +64,13 @@ h2 {
 
 img {
   max-width: 100%;
+  border-radius: 10px;
 }
 
 button {
   display: block;
-  background: black;
-  border: 1ox solid;
+  background: rgb(0, 0, 0, 0%);
+  border: 1px solid;
   border-radius: 8px;
   color: white;
   margin: 0 auto;
@@ -45,7 +79,7 @@ button {
 }
 
 button:hover {
-  background: white;
+  background: rgb(251, 205, 176);
   color: black;
 }
 
