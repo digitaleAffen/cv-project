@@ -1,0 +1,55 @@
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  font-family: ;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  color: white;
+}
+
+.theme-button {
+  background: rgb(255, 234, 221);
+  color: black;
+}
+
+.theme-button:hover {
+  background: black;
+  color: white;
+}
+
+body {
+  background: black;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  display: block;
+  background: black;
+  border: 1ox solid;
+  border-radius: 8px;
+  color: white;
+  margin: 0 auto;
+  padding: 10px 15px;
+  transition: all 150ms ease-in-out;
+}
+
+button:hover {
+  background: white;
+  color: black;
+}
+
+footer {
+  text-align: center;
+  font-family: monospace;
+}
