@@ -1,15 +1,21 @@
 .container {
-  background: rgb(19, 30, 37);
-  border-radius: 10px;
+  background: rgb(5, 5, 5);
+  border-radius: 12px;
+  border-color: #cca8e9;
+  box-shadow: rgba(194, 190, 240, 0.2) 2px 5px 5px;
+  font-family: "Roboto", sans-serif;
   max-width: 600px;
   margin: 20px auto;
   padding: 20px;
   color: white;
 }
 
+.button-container {
+  margin: 30px;
+}
+
 .theme-button {
-  background: rgb(255, 234, 221);
-  color: black;
+  background: #c2bef0;
   border: 1px solid;
 }
 
@@ -24,11 +30,6 @@
 
 .awards-pic:hover {
   filter: contrast(80%);
-  transform: scale(1.2);
-}
-
-.gallery img {
-  transition: all 150ms ease-in-out;
 }
 
 .gallery {
@@ -39,36 +40,43 @@
   margin: 15px 0;
 }
 
+.gallery img {
+  transition: all 150ms ease-in-out;
+}
+
 .gallery img:hover {
   filter: contrast(80%);
-  transform: scale(1.5);
+  transform: scale(2);
 }
 
 .light-theme {
-  background: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+  background: linear-gradient(-20deg, #c2bef0 0%, #defcf9 100%);
 }
 
 .light-theme .container {
-  background: rgb(251, 205, 176);
+  background: rgb(194, 190, 240, 0.4);
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 5px 5px;
 }
 
 body {
   background: radial-gradient(
     circle at -8.9% 51.2%,
-    rgb(255, 124, 0) 0%,
-    rgb(255, 124, 0) 15.9%,
-    rgb(255, 163, 77) 15.9%,
-    rgb(255, 163, 77) 24.4%,
+    rgb(194, 190, 240) 0%,
+    rgb(194, 190, 240) 15.9%,
+    rgb(204, 168, 233) 15.9%,
+    rgb(204, 168, 233) 24.4%,
     rgb(0, 0, 0) 10%
   );
 }
 
 h1 {
   text-align: center;
+  margin: 0;
 }
 
 h2 {
   text-align: center;
+  color: #cca8e9;
 }
 
 img {
@@ -76,11 +84,15 @@ img {
   border-radius: 10px;
 }
 
+p {
+  margin: 20px;
+}
+
 button {
   display: block;
   background: rgb(0, 0, 0, 0%);
   border: 1px solid;
-  border-radius: 8px;
+  border-radius: 50px;
   color: white;
   margin: 0 auto;
   padding: 10px 15px;
@@ -95,4 +107,14 @@ button:hover {
 footer {
   text-align: center;
   font-family: monospace;
+}
+
+a {
+  color: #defcf9;
+  text-decoration: none;
+  transition: all 150ms ease-in-out;
+}
+
+a:hover {
+  color: #cadefc;
 }

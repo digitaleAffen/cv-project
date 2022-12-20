@@ -8,6 +8,9 @@ function MakeItLight() {
   } else {
     body.classList.add("light-theme");
   }
+
+  let buttonDark = document.querySelector("button");
+  buttonDark.innerHTML = `Dark Theme`;
 }
 
 let buttonElement = document.querySelector(".theme-button");
