@@ -1,5 +1,6 @@
 .container {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgb(19, 30, 37);
+  border-radius: 10px;
   max-width: 600px;
   margin: 20px auto;
   padding: 20px;
@@ -17,29 +18,34 @@
   color: white;
 }
 
-.gallery img {
+.awards-pic {
   transition: all 150ms ease-in-out;
 }
 
-.gallery img:hover {
-  filter: contrast(50%);
+.awards-pic:hover {
+  filter: contrast(80%);
   transform: scale(1.2);
+}
+
+.gallery img {
+  transition: all 150ms ease-in-out;
 }
 
 .gallery {
   align-items: center;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 15px;
-  margin: 20px 0;
+  margin: 15px 0;
+}
+
+.gallery img:hover {
+  filter: contrast(80%);
+  transform: scale(1.5);
 }
 
 .light-theme {
-  background: linear-gradient(
-    44.8deg,
-    rgba(255, 136, 102, 0.67) -53.1%,
-    rgba(255, 221, 136, 0.28) 49%
-  );
+  background: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
 }
 
 .light-theme .container {
@@ -47,10 +53,13 @@
 }
 
 body {
-  background: linear-gradient(
-    109.6deg,
-    rgba(0, 0, 0, 0.93) 11.2%,
-    rgb(63, 61, 61) 78.9%
+  background: radial-gradient(
+    circle at -8.9% 51.2%,
+    rgb(255, 124, 0) 0%,
+    rgb(255, 124, 0) 15.9%,
+    rgb(255, 163, 77) 15.9%,
+    rgb(255, 163, 77) 24.4%,
+    rgb(0, 0, 0) 10%
   );
 }
 
