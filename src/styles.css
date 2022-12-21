@@ -15,12 +15,12 @@
 }
 
 .theme-button {
-  background: #c2bef0;
+  background: black;
   border: 1px solid;
 }
 
 .theme-button:hover {
-  background: black;
+  background: #c2bef0;
   color: white;
 }
 
@@ -46,7 +46,7 @@
 
 .gallery img:hover {
   filter: contrast(80%);
-  transform: scale(2);
+  transform: scale(1.6);
 }
 
 .light-theme {
@@ -56,6 +56,43 @@
 .light-theme .container {
   background: rgb(194, 190, 240, 0.4);
   box-shadow: rgba(0, 0, 0, 0.1) 1px 5px 5px;
+}
+
+.card {
+  background: transparent;
+  border-radius: 12px;
+  border-color: #cca8e9;
+  box-shadow: rgba(194, 190, 240, 0.2) 2px 5px 5px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.brands {
+  background: transparent;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.logos {
+  padding: 2px 0 5px 0;
+  transition: all 1500ms ease-in-out;
+}
+
+.logos img:hover {
+  transform: rotate(4deg);
+}
+
+.text-brands {
+  color: #cca8e9;
+  line-height: 15px;
+  margin: 0 75px;
+  text-align: center;
+}
+
+.fa-linkedin {
+  font-size: 100px;
+  text-align: center;
+  margin: 0 50px;
 }
 
 body {
@@ -70,18 +107,28 @@ body {
 }
 
 h1 {
-  text-align: center;
+  font-size: 100px;
+  line-height: 78px;
   margin: 0;
+  text-align: center;
 }
 
 h2 {
-  text-align: center;
   color: #cca8e9;
+  text-align: center;
+}
+
+h3 {
+  color: #defcf9;
+  font-size: 100px;
+  line-height: 78px;
+  margin: 0;
+  text-align: center;
 }
 
 img {
-  max-width: 100%;
   border-radius: 10px;
+  max-width: 100%;
 }
 
 p {
@@ -89,24 +136,18 @@ p {
 }
 
 button {
-  display: block;
   background: rgb(0, 0, 0, 0%);
   border: 1px solid;
   border-radius: 50px;
   color: white;
+  display: block;
   margin: 0 auto;
   padding: 10px 15px;
   transition: all 150ms ease-in-out;
 }
 
 button:hover {
-  background: rgb(251, 205, 176);
   color: black;
-}
-
-footer {
-  text-align: center;
-  font-family: monospace;
 }
 
 a {
@@ -117,4 +158,24 @@ a {
 
 a:hover {
   color: #cadefc;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+strong {
+  color: #cca8e9;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer {
+  font-family: monospace;
+  text-align: center;
 }

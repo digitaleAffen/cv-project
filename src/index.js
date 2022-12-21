@@ -10,7 +10,11 @@ function MakeItLight() {
   }
 
   let buttonDark = document.querySelector("button");
-  buttonDark.innerHTML = `Dark Theme`;
+  if (body.classList.contains("light-theme")) {
+    buttonDark.innerHTML = `Dark Theme`;
+  } else {
+    buttonDark.innerHTML = `Bright Theme`;
+  }
 }
 
 let buttonElement = document.querySelector(".theme-button");
