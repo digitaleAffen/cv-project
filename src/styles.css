@@ -198,13 +198,11 @@ footer {
   }
 
   .logos {
-    align-items: center;
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 15px;
-    margin: 15px 0;
-    padding: 2px 0 5px 0;
-    transition: all 1500ms ease-in-out;
+  }
+
+  .text-brands {
+    margin: 0;
   }
 
   h1 {
@@ -213,5 +211,9 @@ footer {
 
   h3 {
     font-size: 70px;
+  }
+
+  ul {
+    font-size: 14px;
   }
 }
